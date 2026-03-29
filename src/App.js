@@ -6,6 +6,7 @@ import { Toaster } from 'react-hot-toast';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { SmoothScrollProvider } from './providers/SmoothScrollProvider';
 
+import Chatbot          from './components/chatbot/Chatbot';
 import LoginPage        from './pages/LoginPage';
 import RegisterPage     from './pages/RegisterPage';
 import VerifyOtpPage    from './pages/VerifyOtpPage';
@@ -68,6 +69,7 @@ export default function App() {
       <AuthProvider>
         <BrowserRouter>
           <AnimatedRoutes />
+          <Chatbot />
           <Toaster
             position="top-center"
             toastOptions={{
